@@ -15,7 +15,10 @@ export default function Home() {
           rel="stylesheet"
         /> */}
       </Head>
-      <Navbar />
+      <Navbar
+        heading="Capture Photography"
+        message="I capture moments in nature and keep them alive"
+      />
     </div>
   );
 }
