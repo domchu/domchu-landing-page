@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const MenuBar = () => {
   return (
@@ -22,6 +23,7 @@ const MenuBar = () => {
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
+        {/* mobile menu */}
       </div>
     </div>
   );
