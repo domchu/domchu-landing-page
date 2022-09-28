@@ -15,7 +15,6 @@ export default function Home() {
         heading="Capture Photography"
         message="I capture moments in nature and keep them alive"
       />
-      <MenuBar />
     </div>
   );
 }
