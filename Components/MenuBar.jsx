@@ -4,10 +4,10 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const MenuBar = () => {
   return (
-    <div>
-      <div>
+    <div className="fixed left-0 top-0 w-full z-10 ease-in duration-300">
+      <div className="max-w-[1240] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          <h1>Capture</h1>
+          <h1 className="font-bold text-4xl">Capture</h1>
         </Link>
         <ul>
           <li>
