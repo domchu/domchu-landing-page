@@ -23,7 +23,27 @@ const MenuBar = () => {
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
+        {/* mobile button */}
+        <div>
+          <AiOutlineMenu size={20} />
+        </div>
         {/* mobile menu */}
+        <div>
+          <ul>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/#gallery">Gallery</Link>
+            </li>
+            <li>
+              <Link href="/portfolio">Work</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
