@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import MenuBar from "../Components/MenuBar";
 import Navbar from "../Components/Navbar";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         heading="Capture Photography"
         message="I capture moments in nature and keep them alive"
       />
+      <MenuBar />
     </div>
   );
 }
