@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../Components/Navbar";
 import Slider from "../Components/Slider";
+import { sliderData } from "../Components/SliderData";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         heading="Capture Photography"
         message="I capture moments in nature and keep them alive"
       />
-      <Slider />
+      <Slider slides={sliderData} />
     </div>
   );
 }
