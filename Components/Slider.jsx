@@ -10,37 +10,47 @@ const Slider = ({ slides }) => {
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
-  const PrevSlide = () => {
+  const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
   if (!Array.isArray(slides) || length <= 0) {
     return null;
   }
   return (
-    <div id="gallery">
-      <h1>Gallery</h1>
+    <div id="gallery" className="max-w-[1240px] mx-auto ">
+      <h1 className="text-center mb-2 text-4xl font-bold">Gallery</h1>
       <div className="slider">
-        <BsArrowRightSquareFill size={40} />
         {sliderData.map((slide, index) => {
           return (
             <div
               key={index}
               className={
                 index === current
-                  ? "opacity-[0] ease-in duration-1000"
+                  ? "opacity-[1] ease-in duration-1000"
                   : "opacity-0"
               }
             >
-              <BsArrowLeftSquareFill size={40} />
-              {index === current && (
-                <Image
-                  src={slide.image}
-                  alt="/"
-                  width="1440"
-                  height="600"
-                  objectFit="cover"
+              <div className="relative flex justify-center p-4 ">
+                <BsArrowLeftSquareFill
+                  onClick={prevSlide}
+                  className="absolute top-[50%] left-[45px] text-white/70 cursor-pointer select-none z-[10]"
+                  size={40}
                 />
-              )}
+                {index === current && (
+                  <Image
+                    src={slide.image}
+                    alt="/"
+                    width="1440"
+                    height="600"
+                    objectFit="cover"
+                  />
+                )}
+                <BsArrowRightSquareFill
+                  onClick={nextSlide}
+                  className="absolute top-[50%] right-[45px] text-white/70 cursor-pointer select-none z-[10]"
+                  size={40}
+                />
+              </div>
             </div>
           );
         })}
