@@ -13,25 +13,34 @@ const Slider = ({ slides }) => {
   const PrevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-  if (!Array.isArray === 0 || current <= 0) {
+  if (!Array.isArray(slides) || length <= 0) {
     return null;
   }
   return (
     <div id="gallery">
       <h1>Gallery</h1>
       <div className="slider">
-        <BsArrowLeftSquareFill />
-        <BsArrowRightSquareFill />
+        <BsArrowRightSquareFill size={40} />
         {sliderData.map((slide, index) => {
           return (
-            <div key={index} className="">
-              <Image
-                src={slide.image}
-                alt="/"
-                width="1440"
-                height="600"
-                objectFit="cover"
-              />
+            <div
+              key={index}
+              className={
+                index === current
+                  ? "opacity-[0] ease-in duration-1000"
+                  : "opacity-0"
+              }
+            >
+              <BsArrowLeftSquareFill size={40} />
+              {index === current && (
+                <Image
+                  src={slide.image}
+                  alt="/"
+                  width="1440"
+                  height="600"
+                  objectFit="cover"
+                />
+              )}
             </div>
           );
         })}
