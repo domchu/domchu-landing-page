@@ -8,13 +8,18 @@ import InstagramImage from "./InstagramImage";
 
 const Instagram = () => {
   return (
-    <>
-      <p>Follow me on instagram</p>
-      <p>@Capture</p>
-      <div>
+    <div className="max-w-[1240px] max-auto text-center py-24">
+      <p className="text-2xl font-bold ">Follow me on instagram</p>
+      <p className="pb-4">@Capture</p>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4">
         <InstagramImage socialImg={Img1} />
+        <InstagramImage socialImg={Img4} />
+        <InstagramImage socialImg={Img2} />
+        <InstagramImage socialImg={Img1} />
+        <InstagramImage socialImg={Img3} />
+        <InstagramImage socialImg={Img4} />
       </div>
-    </>
+    </div>
   );
 };
 
