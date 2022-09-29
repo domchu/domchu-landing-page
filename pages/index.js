@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Instagram from "../Components/Instagram";
 import Navbar from "../Components/Navbar";
 import Slider from "../Components/Slider";
 import { sliderData } from "../Components/SliderData";
@@ -17,6 +18,7 @@ export default function Home() {
         message="I capture moments in nature and keep them alive"
       />
       <Slider slides={sliderData} />
+      <Instagram />
     </div>
   );
 }
