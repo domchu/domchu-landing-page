@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { sliderData } from "./SliderData";
+import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
 
 const Slider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -19,6 +20,8 @@ const Slider = ({ slides }) => {
     <div id="gallery">
       <h1>Gallery</h1>
       <div className="slider">
+        <BsArrowLeftSquareFill />
+        <BsArrowRightSquareFill />
         {sliderData.map((slide, index) => {
           return (
             <div key={index} className="">
