@@ -1,21 +1,44 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const MenuBar = () => {
   const [menu, setMenu] = useState(false);
 
+  //dark mode initialization
+  const [color, setColor] = useState("transparent");
+  const [textColor, setTextColor] = useState("white");
+
   const handleMenu = () => {
     setMenu(!menu);
   };
 
+  //dark mode
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor("#000");
+        setTextColor("#fff");
+      } else {
+        setColor("transparent");
+        setTextColor("#fff");
+      }
+    };
+    window.addEventListener("scroll", changeColor);
+  }, []);
+
   return (
-    <div className="fixed left-0 top-0 w-full z-10 ease-in duration-300">
+    <div
+      style={{ backgroundColor: `${color}` }}
+      className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
+    >
       <div className="max-w-[1240] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          <h1 className="font-bold text-4xl">Capture</h1>
+          <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
+            Capture
+          </h1>
         </Link>
-        <ul className=" hidden sm:flex">
+        <ul style={{ color: `${textColor}` }} className=" hidden sm:flex">
           <li className="p-4 text-3xl">
             <Link href="/">Home</Link>
           </li>
@@ -34,7 +57,11 @@ const MenuBar = () => {
           onClick={handleMenu}
           className="block sm:hidden z-10 cursor-pointer"
         >
-          {menu ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+          {menu ? (
+            <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
+          ) : (
+            <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
+          )}
         </div>
         {/* mobile menu */}
         <div
