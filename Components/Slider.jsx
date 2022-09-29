@@ -20,18 +20,22 @@ const Slider = ({ slides }) => {
     <div id="gallery">
       <h1>Gallery</h1>
       <div className="slider">
-        <BsArrowRightSquareFill size={40} />
+        <BsArrowLeftSquareFill
+          className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[10]"
+          size={40}
+        />
+
         {sliderData.map((slide, index) => {
           return (
             <div
               key={index}
               className={
                 index === current
-                  ? "opacity-[0] ease-in duration-1000"
+                  ? "opacity-[1] ease-in duration-1000"
                   : "opacity-0"
               }
             >
-              <BsArrowLeftSquareFill size={40} />
+              <div className="relative "></div>
               {index === current && (
                 <Image
                   src={slide.image}
@@ -41,6 +45,10 @@ const Slider = ({ slides }) => {
                   objectFit="cover"
                 />
               )}
+              <BsArrowRightSquareFill
+                className="absolute top-[50%] right-[30px] text-black/70 cursor-pointer select-none z-[10]"
+                size={40}
+              />
             </div>
           );
         })}
