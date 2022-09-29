@@ -10,7 +10,7 @@ const Slider = ({ slides }) => {
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
-  const PrevSlide = () => {
+  const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
   if (!Array.isArray(slides) || length <= 0) {
@@ -32,7 +32,8 @@ const Slider = ({ slides }) => {
             >
               <div className="relative flex justify-center p-4 ">
                 <BsArrowLeftSquareFill
-                  className="absolute top-[50%] left-[40px] text-white/70 cursor-pointer select-none z-[10]"
+                  onClick={prevSlide}
+                  className="absolute top-[50%] left-[45px] text-white/70 cursor-pointer select-none z-[10]"
                   size={40}
                 />
                 {index === current && (
@@ -45,7 +46,8 @@ const Slider = ({ slides }) => {
                   />
                 )}
                 <BsArrowRightSquareFill
-                  className="absolute top-[50%] right-[40px] text-white/70 cursor-pointer select-none z-[10]"
+                  onClick={nextSlide}
+                  className="absolute top-[50%] right-[45px] text-white/70 cursor-pointer select-none z-[10]"
                   size={40}
                 />
               </div>
