@@ -12,7 +12,7 @@ const Instagram = () => {
       <p>Follow me on instagram</p>
       <p>@Capture</p>
       <div>
-        <InstagramImage />
+        <InstagramImage socialImg={Img1} />
       </div>
     </>
   );
