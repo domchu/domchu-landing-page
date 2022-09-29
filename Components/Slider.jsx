@@ -17,8 +17,8 @@ const Slider = ({ slides }) => {
     return null;
   }
   return (
-    <div id="gallery">
-      <h1 className="text-center mb-2 text-4xl">Gallery</h1>
+    <div id="gallery" className="max-w-[1240px] mx-auto ">
+      <h1 className="text-center mb-2 text-4xl font-bold">Gallery</h1>
       <div className="slider">
         {sliderData.map((slide, index) => {
           return (
