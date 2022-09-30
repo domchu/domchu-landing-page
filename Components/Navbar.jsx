@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = ({ heading, message }) => {
   return (
-    <div className="flex items-center justify-center h-screen mb-[12rem] bg-fixed bg-center bg-cover custom-img">
+    <div className="flex items-center justify-center h-screen mb-[4rem] bg-fixed bg-center bg-cover custom-img">
       {/* overlay */}
       <div className="absolute top-0 left-0 bottom-0 bg-black/10 z-[4]" />
       <div className="p-5 text-white z-[3]  mt-[-10]">
