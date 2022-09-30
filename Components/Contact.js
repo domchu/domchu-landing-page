@@ -32,7 +32,7 @@ const Contact = () => {
           rows="10"
           placeholder="Message"
         ></textarea>
-        <button className="border-shallow-lg p-3 w-full mt-4 text-white">
+        <button className="border-shallow-lg p-3 w-full mt-4 text-white font-bold bg-slate-600">
           Summit
         </button>
       </form>
