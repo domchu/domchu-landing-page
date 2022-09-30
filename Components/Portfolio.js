@@ -5,6 +5,7 @@ import nature2 from "../public/nature2.jpg";
 import nature3 from "../public/nature3.jpg";
 import nature4 from "../public/nature4.jpg";
 import nature5 from "../public/nature5.jpg";
+import nature6 from "../public/nature6.jpg";
 
 const Portfolio = () => {
   return (
@@ -53,6 +54,16 @@ const Portfolio = () => {
         <div className="w-full h-full">
           <Image
             src={nature5}
+            alt="/"
+            layout="responsive"
+            width="220"
+            height="230"
+            objectFit="cover"
+          />
+        </div>
+        <div className="w-full h-full">
+          <Image
+            src={nature6}
             alt="/"
             layout="responsive"
             width="220"
