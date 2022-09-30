@@ -5,7 +5,10 @@ import Navbar from "../Components/Navbar";
 const contact = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar
+        heading="Contact"
+        message="Summit the form for more work and quotes"
+      />
       <Contact />
     </div>
   );
