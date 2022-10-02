@@ -26,7 +26,7 @@ const Portfolio = () => {
     <div className="max-w-[1240px] mx-auto py-16 text-center">
       <h1 className="font-bold text-2xl p-4">Travel Photos</h1>
       <div className="grid grid-row-none md:grid-cols-5 p-5 gap-4">
-        <div className="w-full h-full col-span-2 md:col-span-3 row-span-2">
+        <div className="w-full h-full col-span-2 md:col-span-3 row-span-2  hover:opacity-70 cursor-pointer">
           <Image
             src={nature1}
             alt="/"
@@ -35,7 +35,7 @@ const Portfolio = () => {
             height="450"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full hover:opacity-70 cursor-pointer">
           <Image
             src={nature2}
             alt="/"
@@ -45,7 +45,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature3}
             alt="/"
@@ -55,7 +55,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature4}
             alt="/"
@@ -65,7 +65,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature5}
             alt="/"
@@ -75,7 +75,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature6}
             alt="/"
@@ -85,7 +85,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature7}
             alt="/"
@@ -95,7 +95,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature8}
             alt="/"
@@ -105,7 +105,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature9}
             alt="/"
@@ -115,7 +115,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature10}
             alt="/"
@@ -125,7 +125,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature11}
             alt="/"
@@ -135,7 +135,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature12}
             alt="/"
@@ -145,7 +145,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature13}
             alt="/"
@@ -155,7 +155,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature14}
             alt="/"
@@ -165,7 +165,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature15}
             alt="/"
@@ -175,7 +175,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature16}
             alt="/"
@@ -185,7 +185,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature17}
             alt="/"
@@ -195,7 +195,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature18}
             alt="/"
@@ -205,7 +205,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature19}
             alt="/"
@@ -215,7 +215,7 @@ const Portfolio = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full  hover:opacity-70 cursor-pointer">
           <Image
             src={nature20}
             alt="/"
