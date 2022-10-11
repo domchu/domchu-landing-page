@@ -3,6 +3,8 @@ import Img1 from "../public/Img1.jpg";
 import Img2 from "../public/Img2.jpg";
 import Img3 from "../public/Img3.jpg";
 import Img4 from "../public/Img4.jpg";
+import Img5 from "../public/nature1.jpg";
+import Img6 from "../public/nature2.jpg";
 import InstagramImage from "./InstagramImage";
 
 const Instagram = () => {
@@ -14,9 +16,9 @@ const Instagram = () => {
         <InstagramImage socialImg={Img1} />
         <InstagramImage socialImg={Img4} />
         <InstagramImage socialImg={Img2} />
-        <InstagramImage socialImg={Img1} />
+        <InstagramImage socialImg={Img5} />
         <InstagramImage socialImg={Img3} />
-        <InstagramImage socialImg={Img4} />
+        <InstagramImage socialImg={Img6} />
       </div>
     </div>
   );

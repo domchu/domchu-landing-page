@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="max-w-[1540px] m-auto p-4 h-screen bg-gray-700">
       <h1 className="text-2xl font-bold text-center p-4 text-white">
-        Let's work together
+        Let us work together
       </h1>
       <form className="max-w-[600px] m-auto">
         <div className="grid grid-cols-2 gap-2">
