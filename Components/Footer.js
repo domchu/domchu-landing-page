@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="bg-gray-800 text-white flex justify-center">
-        <ul style={{}} className=" block text-1xl sm:flex">
+        <ul className=" block text-1xl sm:flex">
           <li className="p-4 text-2xl  hover:text-gray-500">
             <Link href="/">Home</Link>
           </li>
